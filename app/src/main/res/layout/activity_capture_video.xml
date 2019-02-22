@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_captureVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_capture_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"/>
+
+        <Button
+            android:id="@+id/btn_captureVideoWithoutData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_captureVideoButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/label_capture_video_without_data"/>
+
+        <Button
+            android:id="@+id/btn_play_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_captureVideoWithoutData"
+            android:text="@string/label_play_video"/>
+
+        <VideoView
+            android:id="@+id/vv_videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/video_view_height"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_below="@+id/btn_play_video"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
