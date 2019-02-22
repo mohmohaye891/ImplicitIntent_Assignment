@@ -25,9 +25,6 @@
 
         </activity>
 
-        <activity android:name=".CaptureVideoActivity">
-
-        </activity>
 
         <activity android:name=".TimerActivity">
             <intent-filter>
